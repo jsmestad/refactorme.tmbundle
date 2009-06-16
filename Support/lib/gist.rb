@@ -28,7 +28,13 @@ module Gist
     req = Net::HTTP.post_form(url, data(private_gist))
     url = copy req['Location']
     puts "Created gist at #{url}. URL copied to clipboard."
+    send_to_refactorme(url)
     clear
+  end
+  
+  def send_to_refactorme(url)
+    uri = URI.parse('http://www.refactorme.com/api/textmate/submit')
+    req = Net::HTTP.post_form(uri, {:gist_url => url})
   end
   
   def clear
