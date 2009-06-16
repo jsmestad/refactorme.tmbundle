@@ -11,9 +11,9 @@
 	<key>input</key>
 	<string>selection</string>
 	<key>keyEquivalent</key>
-	<string>^~@g</string>
+	<string>^~@r</string>
 	<key>name</key>
-	<string>Add to multifile Gist</string>
+	<string>Add to selection to multifile Gist</string>
 	<key>output</key>
 	<string>showAsTooltip</string>
 	<key>uuid</key>

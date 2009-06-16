@@ -1,0 +1,5 @@
+h1. RefactorMe.tmbundle
+
+p. This bundle allows you to submit directly to RefactorMe from TextMate.
+
+p. Original work is based on dr.nic's gist.tmbundle
