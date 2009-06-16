@@ -35,6 +35,7 @@ module Gist
   def send_to_refactorme(url)
     uri = URI.parse('http://www.refactorme.com/api/textmate/submit')
     req = Net::HTTP.post_form(uri, {:gist_url => url})
+    puts "Gist submitted to RefactorMe."
   end
   
   def clear
